@@ -1,194 +1,260 @@
 # 制作配方
 
-## 先把需求变成六个变量
+## 先把需求变成视觉命题
+
+不要从“龙、眼睛、门、城市”这样的名词清单开始。先写一条能用形状和情绪验证的命题：
 
 ```text
-ground       一个具体的当代地点/物件
-witness      谁在观看：通勤者、恋人、店员、无脸人、动物
-anomaly      出现什么：巨日、龙、面具、眼睛、门、解剖体
-operation    异常改变什么：揭示、吞噬、交换、复制、倒转、封门
-intensity    1 克制的日常显灵 / 2 神话叙事 / 3 极繁拼贴
-format       图片画幅、视频时长、系列数量、平台
+这条画面要让人同时感到：______ 与 ______。
+这种张力通过什么视觉关系出现：尺度差 / 遮挡 / 倒置 / 复制 / 封闭 / 观看 / 穿透。
+去掉所有象征物名称后，画面仍然应该让人感到这种张力。
 ```
 
-信息不足时，优先选择便利店、住宅巷口、夜间道路、潮湿积水和通勤者。它们与这套视觉最稳，也最容易避免空泛的“梦境”。
+例如：
 
-## 图像提示词公式
+- “庄重仪式外表与兽性冲动同时存在。”——可用克制服装、平静站姿、局部身份断裂完成。
+- “现代秩序只是覆盖在宇宙尺度前的薄膜。”——可用巨型平涂场、细小人影、边缘露出的深层空间完成。
+- “凝视既能带来启示，也会把观看者吞没。”——可用反向视线、中心轴、尺度压迫和材质断点完成。
+
+命题决定视觉关系；题材只提供具体形象。
+
+## 七个设计变量
+
+| 变量 | 要决定什么 |
+| --- | --- |
+| 视觉命题 | 画面同时成立的两种情绪或秩序 |
+| 构图骨架 | 孤立图腾、轴线登临、全景游行、正面祭坛、超近景切片或框中世界 |
+| 主轮廓 | 200px 缩略图下仍可辨认的唯一大形 |
+| 色调分层 | 承重色、过渡色、事件色、停顿色 |
+| 细节岛 | 两到四个有明确轮廓的高密区域 |
+| 材质断点 | 一个需要侵入基础印刷表面并改变世界规则的媒介 |
+| 交付媒介 | 画幅、静态/动态、系列数量和观看距离 |
+
+信息不足时，优先选择与用户主题最接近的空间骨架，用较克制的细节密度完成第一版。不要为了“丰富”而同时加入所有构图类型。
+
+## 通用图像提示词结构
 
 ```text
-[画幅与用途]. [日常锚点与地点]. [观察者及其姿态]. [从前景到异常的主导轴线].
-[主导异象 = 尺度 + 象征动作]. [城市/山水/建筑层如何被改变].
-[冷底暖冲突色板]. [复古日式版画 + 硬边拼贴 + 套色偏移 + 纸噪材质].
-[镜头高度、景别、光线、天气]. [叙事语气].
+[画幅与用途]。
+[一条脱离符号清单的视觉命题]。
+[构图骨架：主轮廓、观看入口、轴线或边框如何组织画面]。
+[一到两个具体形象如何承担视觉职责，它们如何改变空间或观看关系]。
+[色调三级关系：承重色及面积、过渡色、事件色、停顿色；整体偏中暗、高饱和、低纯白]。
+[细节地形：哪里空旷，哪两到三个区域高密，细节形成什么可读团块]。
+[基础材质：硬边平涂、黑色轮廓、印刷套色、半调或纸面颗粒]。
+[唯一材质断点及它被统一的方式]。
+[镜头、透视、光线和最终气质]。
+[针对本次画面的负面约束]。
 ```
 
-把“异象 = 尺度 + 动作”写清楚。例如不要只写“很多龙”，而写“一条巨大的青龙从云中俯冲，身体围住城市，头部正对前景台阶”。
+不要把“复古日式版画 + 拼贴 + 赛博 + 超现实”堆成一串风格标签。每个标签都必须对应可见结果：轮廓有多硬、阴影是否平涂、颗粒覆盖哪里、空间如何错位。
 
-### 提示词 1：神话全景
+## 可复用风格段
+
+下面这段只描述视觉表面，不指定题材。可按画面删除其中一个材质事件：
 
 ```text
-Vertical 2:3 surreal editorial poster. A lone commuter in a black coat stands at the bottom of
-a wide red carpet leading through a blue-and-vermilion checkerboard plaza. Behind the plaza,
-a dense layered city of convenience stores, utility poles, temple roofs and glass towers climbs
-into green mountains. A colossal hollow crescent eye opens above Mount Fuji, and white woodblock
-clouds pour down through the eye without covering the central axis. Deep cobalt sky, vermilion
-sun, ivory clouds, moss green forest, black ink. Retro Japanese print mixed with hard-edge photo
-collage, fine contour lines, slight screen-registration offset, visible paper grain, flat printed
-color blocks. Wide-angle frontal perspective, impossible vertical scale, no random decorative
-symbols.
+A graphic-surreal vertical poster built from compressed high-chroma color rather than
+naturalistic lighting. Broad fields of deep cobalt blue, near-black ink and dark moss green
+carry the image; a small area of vermilion, orange-red or luminous metal marks the event;
+warm ivory and peach provide breathing space. Shapes are separated by bold black keylines
+and hard-edged color blocks. Shadows are posterized. Fine contour engraving, halftone dots,
+screen-print misregistration and paper grain run continuously across the whole surface.
+Sparse photographic, chrome or screen-print fragments are integrated by the same contour,
+palette and grain. Keep near-white highlights scarce. The result should feel like a designed
+print object with an impossible staged space, not a clean 3D render and not a collection
+of unrelated stickers.
 ```
 
-中文要点：底部通勤者与红毯建立朝圣轴；城市层保持日常可识别；巨眼只执行“打开天空”这个动作。
+## 配方一：孤立图腾
 
-### 提示词 2：日常显灵
+适用于封面、肖像或单张强视觉。先设计大形和负形，后决定细节。
 
 ```text
-Vertical 9:16 cinematic frame, quiet Japanese suburban street at dusk. Utility poles, low houses,
-a roadside vending machine and glossy puddles occupy the lower half; a solitary figure in a long
-black coat stands at the left edge and looks into a fog-filled road. Above the fog, an enormous
-white celestial sphere begins to rise behind the city skyline while red clouds spread across a
-deep ultramarine sky. The puddles reflect the impossible sphere before the sky itself fully reveals
-it. Restrained surrealism, flat illustrated texture over photographic detail, slight VHS softness,
-hand-printed grain, crisp utility wires. The ordinary street remains believable; only scale,
-lighting and reflection are impossible.
+Vertical 3:4 graphic-surreal cover image. Visual proposition: [emotional tension].
+One monumental [figure/animal/object/abstract mass] occupies 35–55% of the image, cropped
+by the frame and isolated against a broad field of deep cobalt blue. Its silhouette is
+readable in one glance. [One spatial contradiction: it floats, passes through the field,
+casts an impossible shadow, or opens into a second space]. The large field stays quiet;
+detailed engraving and halftone are concentrated on the main form and one small secondary
+cluster. Bold black keylines, hard-edged printed color, cream rather than pure white,
+scarce sharp highlights, continuous paper and screen-print grain. No background inventory,
+no multiple competing anomalies.
 ```
 
-中文要点：让水洼先泄露异象，天空后完成揭示；普通街道必须可居住。
+判断重点：背景越简，主体轮廓越要特别；主体越大，细节越不能均匀撒满。
 
-### 提示词 3：肖像寓言
+## 配方二：轴线登临
+
+适用于神话全景、纵深海报和仪式感图像。透视可以错，但入口必须清楚。
 
 ```text
-Vertical 4:5 editorial fashion portrait on a flat cobalt blue background. A young man in a
-tailored ivory suit stands in strict profile, holding a dense bouquet of red roses, blue aster
-and white chrysanthemums. A red oni mask is fitted directly into the front of his face, overlapping
-his skin without floating. Fine ink contours, peach and vermilion skin tones, dense floral detail,
-coarse offset-print grain, slight color misregistration. Calm pose, no aggression, one impossible
-identity substitution, generous negative space.
+Vertical 2:3 mythological poster with a staged, impossible ascent. The lower 20–30%
+contains a small witness and a clearly readable threshold. A continuous path, frame,
+stair, reflection or perspective channel leads upward through two or three stacked spatial
+bands. Each band changes the world’s scale rather than merely adding a different prop.
+A single dominant mass terminates the axis. Large color fields separate the bands; the
+dense detail occurs in the threshold, the central channel and the outer framing edge.
+Use compressed cobalt, dark ink, vermilion, warm ivory and moss green. Black contour,
+posterized shadow, fine print texture. Preserve one deliberate perspective contradiction,
+but keep the axis legible. No equal-sized focal points, no frosted atmospheric mush.
 ```
 
-中文要点：服装、花束和站姿都克制，只保留“脸被鬼面替换”这一处异常。
+判断重点：先检查没有细节时轴线是否成立；如果轴线本身不清楚，增加道具只会让画面更乱。
 
-### 提示词 4：极繁拼贴
+## 配方三：全景游行
+
+适用于世界观、长海报和横向视频。重点是层级与密度节奏，不是事件越多越好。
 
 ```text
-Vertical 3:4 psychedelic collage. A serene white-robed oracle stands at the center of a dark
-forest, one palm opening a river of blue pixel fragments that floods a night city. Around the
-figure, hard-cut fragments of medical anatomy, circuit boards, antique ornaments and small blue
-screens showing an eye are pasted together at conflicting perspectives. Vermilion-red beasts and
-green mountain silhouettes frame the edge. The figure remains calm and legible; one continuous
-luminous axis runs from the raised hand into the distant skyline. Xerox grain, halftone dots,
-screen-print misregistration, glossy magazine scraps, black cosmic void.
+Vertical 9:16 panoramic procession built from three to five horizontal world bands:
+[cosmic field] / [mountain or architectural mass] / [habitable structures] / [crowd or
+ground-level detail]. The bands share one compressed palette and one black contour language,
+but change scale and perspective. At least one band is a broad, quiet color field. Small
+episodes appear in clusters, never evenly distributed. A single continuous current—road,
+river, light, wire, gaze or pattern—connects the bands. [One material break] appears only
+once and is re-unified by the global halftone grain. Dense print detail at the edges,
+larger colored masses in the center, low highlights, no rainbow grading.
 ```
 
-中文要点：中心人物必须平静、可读；所有碎片围绕一条发光轴线工作。
+判断重点：把画面看作三条密度带，而不是三层素材。每一层都要回答“它让世界尺度发生了什么变化”。
+
+## 配方四：正面祭坛
+
+适用于音乐视觉、仪式性封面和强对称图形。
+
+```text
+Frontal near-symmetrical poster organized as an altar. A single central mass or face
+occupies the middle. Radial rays, paired wings, repeated border bands or opposing silhouettes
+compress the outer space. The two sides differ in detail and temperature so the symmetry
+feels constructed, not mirrored. Central high-density zone; broad bands of deep blue,
+ink black or warm ivory create order around it. Vermilion event color, cobalt base, thick
+black contours, engraved texture and one restrained chrome or screen-interface interruption.
+The central silhouette remains clear at thumbnail size. No pixel-perfect mirroring, no
+ornament without spatial function.
+```
+
+判断重点：对称负责庄严，不规则负责生命；两边完全镜像会变成机械模板。
+
+## 配方五：超近景切片
+
+适用于人物、欲望、恐惧、窥视和编辑视觉。复杂感来自裁切，不是纹理堆叠。
+
+```text
+Vertical 4:5 extreme editorial close-up. A face, eye, hand, chest or object surface fills
+60–85% of the frame. A diagonal crop or one intrusive edge breaks the portrait. The eye
+direction or gesture points outside the frame. Flat cobalt, vermilion paper or black void
+replaces the background. Skin uses peach and warm ivory with engraved contour lines and
+posterized shadows; one material change occurs only on the focal feature. Halftone and
+coarse print grain cover the entire image. Near-white highlights are small and sharp.
+No glossy plastic skin, no ring-light beauty rendering, no ornamental background clutter.
+```
+
+判断重点：如果拿掉符号后画面仍然紧张，说明裁切、视线或动作有效；如果只有符号制造张力，重新构图。
 
 ## 通用负面约束
 
 ```text
-generic neon cyberpunk, seamless glossy CGI, plastic skin, stock-photo realism, blurry subject,
-random shrine objects, multiple competing focal points, unreadable clutter, floating symbols with
-no spatial effect, excessive tiny text, flat brightness with no black anchor, generic fantasy
-landscape, empty city without lived-in objects, anime screenshot copy, watermark
+literal symbol pile, equal-sized multiple focal points, rainbow palette, average color area,
+clean glossy 3D render, plastic skin, HDR bloom, soft atmospheric haze everywhere, uniform
+detail across the entire frame, random tiny glyphs, sticker collage, floating props with no
+spatial effect, symmetrical mirror duplication, generic neon cyberpunk, generic fantasy
+wallpaper, anime screenshot imitation, watermark, borrowed artist signature
 ```
 
-负面约束只删除会破坏系统的内容。不要把某一类文化符号整体列入负面，否则会削弱这套视觉能在不同文化场景中转译的能力。
+负面约束应针对本次失败，而不是把整类题材禁用。不要把“城市、神话、传统图案、金属或数字材质”整体写进负面。
+
+## 改图提示词
+
+当结果已经出现元素拼贴感，不要只要求“更高级”。明确指出需要重排的视觉关系：
+
+```text
+Reduce the number of focal masses. Preserve one dominant silhouette and make the remaining
+forms belong to the background hierarchy. Group fine detail into two or three readable
+clusters, then clear 35–50% of the image into broad flat fields. Compress the palette around
+one dark base, one warm event color and one warm neutral. Apply one continuous halftone and
+paper-grain surface across all materials. Keep only one deliberate material break. Re-state
+the main axis after these changes.
+```
 
 ## 系列连续性
 
-一次做 3 张以上时，建立以下四栏：
+系列首先锁定视觉组织，其次才锁定具体角色。
 
-| 固定项 | 可变项 | 逐张动作 | 禁止漂移 |
-| --- | --- | --- | --- |
-| 同一观察者服装/轮廓 | 其位置与尺度 | 每张只发现一个新异象 | 人物脸型与服装不能随机变化 |
-| 蓝、红、象牙、墨黑主色 | 某一颜色的面积占比 | 从街景逐步推到宇宙 | 不要突然变成粉紫赛博色板 |
-| 同一材质组合 | 版画、摄影、数字材料的比例 | 材质碰撞逐张升级 | 不要中途改成无纹理 3D |
-| 同一世界规律 | 入口的形式 | 水、门、眼、云各自成为门 | 规则不能只为单张好看而改变 |
+| 固定项 | 可变项 | 禁止漂移 |
+| --- | --- | --- |
+| 同一构图骨架或其可控变体 | 主体尺度与裁切 | 不要每张更换世界组织规则 |
+| 同一承重色与事件色关系 | 事件色出现位置 | 不要从压缩色板变成全彩虹 |
+| 同一黑轮廓与印刷颗粒 | 局部数字或金属断点 | 不要让每张图拥有不同渲染引擎 |
+| 同一细节密度节奏 | 高密团块内容 | 不要让某张突然变成满屏随机噪点 |
 
 最简单的三连作：
 
-1. 观察者站在普通街口；
-2. 门槛被发现，异象只进入局部；
-3. 镜头拉开，城市整体已处于异象内部。
+1. 孤立主体面对大片空白场，只露出一次材质断点；
+2. 同一主体被纳入轴线舞台，空间开始分层；
+3. 全景展开，主体成为众多尺度关系中的一个，但轮廓和色板不变。
 
-## 视频生成：单镜头显灵
+## 视频：让画面分层被发现
 
-适用于 6–20 秒竖屏。建议锁定一个主运动，例如缓慢推进。
+视频不是连续 morph。画面应像多层印刷物被镜头依次发现。
 
-```text
-0.0–3.0s  ESTABLISH
-固定中景，人物与街道完整可读。声音只有环境底噪和低频脉动。
-
-3.0–6.0s  SIGNAL
-天空或水洼出现单一光点；镜头继续极慢推进。不要让建筑变形。
-
-6.0–10.0s  INTRUSION
-光点扩张成巨日/眼睛/神性球体，云层受压，倒影先于现实发亮。
-
-10.0–14.0s  RESPONSE
-人物影子、路面、招牌和树叶同时响应。保持人物不动或只转头。
-
-14.0–18.0s  HOLD
-让观众看清新空间。镜头可以几乎停止，不用快速环绕。
-
-18.0–20.0s  WITHDRAW
-用雾、烟、黑场或声音骤停撤回，不解释异象来源。
-```
-
-视频提示词结尾必须写：
+### 单镜头显灵，6–20 秒
 
 ```text
-one continuous shot, stable subject identity, restrained camera push-in, one surreal reveal,
-the real street remains recognizable, no constant morphing, no text, no cutaway
+0–3s   保持完整构图，让主轮廓、入口和色块关系清楚。
+3–6s   只出现一个信号：亮边、倒影、颗粒移动、阴影扩张或第二空间露出。
+6–12s  异象改变一个空间关系；主体轮廓保持不变。
+12–16s 停顿，让观众看见新旧空间同时存在。
+16–20s 用云、黑场、雾、声音撤离或静止结束。
 ```
 
-## 视频生成：五场景神话漫游
+镜头默认只做极慢推进或固定。允许云、雾、光和倒影改变，不要让建筑、脸和文字一起持续变形。
 
-适用于 24–32 秒横屏或方形。每镜 4–6 秒，每个镜头只承担一个叙事动作。
+### 多场景漫游，24–32 秒
 
-| 镜次 | 时长 | 场景职责 | 镜头 |
-| --- | --- | --- | --- |
-| 1 | 4–6s | 观察者与住宅/街角 | 横移或静止 |
-| 2 | 4–6s | 城市全景显出第二层尺度 | 推进或上摇 |
-| 3 | 4–6s | 具体物件与招牌维持现实感 | 缓慢横移 |
-| 4 | 4–6s | 门槛出现，异象越过边界 | 固定机位或轻推 |
-| 5 | 4–6s | 人与异象共享全局 | 后退或静止 |
+每镜四到六秒，并保持同一视觉表面：
 
-镜头间允许硬切或短叠化，但保持同一套天空逻辑、人物服装和材质密度。不要每镜重新设计世界。
+1. 孤立轮廓或超近景建立尺度；
+2. 拉开到轴线舞台；
+3. 进入一个高密细节岛；
+4. 穿过门槛或框中世界；
+5. 回到全景，让前面的尺度关系同时成立。
+
+每个镜头只承担一种空间职责。不要每镜换一套色板、轮廓粗细和纹理方向。
 
 ## 声音方向
 
-- 静态拼贴视频可用低保真鼓组、模拟合成器底噪、磁带抖动和偶尔的金属敲击。
-- 环境片不要铺满旋律。保留电线风鸣、远处车流、便利店冷柜和鞋底水声。
-- 异象出现时可让高频短暂消失，留下 1–3 秒低频压迫或空洞静音，再让声音回归。
-- 不默认加旁白。若用户要求旁白，让台词只描述人物正在看见什么，不解释象征意义。
+- 用环境底噪、风、电流、远处人群和低频压力建立“空间还没有被解释完”的感觉。
+- 事件色出现时可短暂抽掉高频，保留一至三秒空洞和低频。
+- 不默认使用宏大鼓点或旁白。若声音本身过于英雄化，会破坏人物只是“看见”而非“征服”的关系。
 
 ## 交付模板
 
 ### 图片提示词包
 
 ```text
-概念：
-日常锚点：
-异象与动作：
-观察者：
-构图轴：
-色板：
-材质：
+视觉命题：
+构图骨架：
+主轮廓与观看入口：
+空间矛盾：
+色调分层：
+细节岛：
+材质断点：
 主提示词：
 负面提示词：
-可替换变量：
+可替换形象：
 ```
 
 ### 视频镜头包
 
 ```text
-概念：
-时长/画幅：
-世界规则：
-角色固定项：
-镜头表：时间 | 画面 | 运动 | 异象状态 | 声音
+视觉命题：
+构图骨架：
+时长 / 画幅：
+固定视觉表面：
+空间分层：
+镜头表：时间 | 画面 | 运动 | 空间变化 | 声音
 关键帧提示词：
 运动提示词：
-收尾方式：
 连续性风险：
 ```
