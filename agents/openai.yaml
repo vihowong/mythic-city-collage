@@ -1,0 +1,5 @@
+interface:
+  display_name: "神话城市拼贴"
+  short_description: "把日常街景推入神话、拼贴与异象的电影级视觉创作系统"
+  brand_color: "#0B4EA2"
+  default_prompt: "用 $mythic-city-collage 为一条便利店夜班短片设计视觉系统、关键帧提示词和镜头节奏。"
