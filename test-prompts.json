@@ -1,0 +1,80 @@
+{
+  "skill": "mythic-city-collage",
+  "version": "1.2.0",
+  "source_book": "Mythic City Collage visual corpus — provenance pending",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "帮我做一张暗色高饱和、超现实但没有元素堆叠的音乐封面方案",
+      "expected_behavior": "激活主技能，并先提炼视觉命题、选择构图骨架，再给色调与细节",
+      "notes": "正面场景：完整风格创作请求"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这张海报颜色很多但显得像贴纸，帮我诊断并给最小修复",
+      "expected_behavior": "激活主技能，按主轮廓、灰度、密度、材质顺序诊断",
+      "notes": "正面场景：风格 critique"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "给我三张系列封面，统一下视觉风格，但每张空间尺度逐步展开",
+      "expected_behavior": "激活主技能，输出固定项、可变项与每张唯一推进关系",
+      "notes": "正面场景：系列连续性"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "Write a production-ready image prompt for a graphic-surreal editorial poster with compressed cobalt and vermilion color, not neon cyberpunk.",
+      "expected_behavior": "激活主技能，编译视觉命题、构图、色调、密度、材质和负面约束",
+      "notes": "英文正向请求"
+    },
+    {
+      "id": "should-trigger-05",
+      "type": "should_trigger",
+      "prompt": "用神话城市拼贴风格做一张海报，但不要龙、眼睛和棋盘",
+      "expected_behavior": "激活主技能，用视觉职责和形式关系替代固定符号",
+      "notes": "显式调用与去符号要求"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我把这张证件照的白底换成蓝底",
+      "expected_behavior": "不应激活主技能，这是基础图像编辑",
+      "notes": "诱饵：非艺术指导"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "把这份季度销售数据做成折线图并解释趋势",
+      "expected_behavior": "不应激活主技能，这是数据可视化与分析",
+      "notes": "诱饵：图表任务"
+    },
+    {
+      "id": "should-not-trigger-03",
+      "type": "should_not_trigger",
+      "prompt": "给这个陶瓷杯做一张干净、无纹理的商业产品棚拍",
+      "expected_behavior": "不应激活主技能，这是干净产品摄影",
+      "notes": "诱饵：排除项中的 clean product rendering"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我要一张有这种气质的方形品牌 banner，但必须留出文字空间",
+      "expected_behavior": "应激活主技能，但必须重新设计方形布局并保留文字安全区，不能直接裁切竖幅",
+      "notes": "边界：缺少方形样本，需要受控外推"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "只给我一句最关键的风格建议，不要完整方案",
+      "expected_behavior": "可以激活主技能，但应压缩成一条最高优先级建议，不强行输出整套模板",
+      "notes": "边界：低预算/低信息请求"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "所有 should_not_trigger 必须通过；主技能只有单一入口，因此以不同 capability 的意图区分代替兄弟 Skill 混淆。"
+}

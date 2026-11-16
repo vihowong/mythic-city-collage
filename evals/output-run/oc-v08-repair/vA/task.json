@@ -1,0 +1,7 @@
+{
+  "case_id": "oc-v08-repair",
+  "variant_label": "vA",
+  "prompt": "一张海报很亮、很多物件，缩略图不知道看哪里，请按上游优先顺序诊断。",
+  "input_files": [],
+  "instruction": "按 prompt 实际完成任务，最终答案写同目录 output.md，其他交付物也放在本目录。不要读取相邻变体、映射表或预期答案。"
+}

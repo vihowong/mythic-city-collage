@@ -1,0 +1,56 @@
+{
+  "oc-v01-visual-proposition": {
+    "vA": "new_skill"
+  },
+  "oc-v02-composition": {
+    "vA": "new_skill"
+  },
+  "oc-v03-tone": {
+    "vA": "new_skill"
+  },
+  "oc-v04-space": {
+    "vA": "new_skill"
+  },
+  "oc-v05-density": {
+    "vA": "new_skill"
+  },
+  "oc-v06-material": {
+    "vA": "new_skill"
+  },
+  "oc-v07-prompt": {
+    "vA": "new_skill"
+  },
+  "oc-v08-repair": {
+    "vA": "new_skill"
+  },
+  "oc-v09-series": {
+    "vA": "new_skill"
+  },
+  "ob-v01-symbol-list": {
+    "vA": "new_skill"
+  },
+  "ob-v02-horizontal": {
+    "vA": "new_skill"
+  },
+  "ob-v03-safety-color": {
+    "vA": "new_skill"
+  },
+  "ob-v04-real-space": {
+    "vA": "new_skill"
+  },
+  "ob-v05-minimal-logo": {
+    "vA": "new_skill"
+  },
+  "ob-v06-clean-ui": {
+    "vA": "new_skill"
+  },
+  "ob-v07-no-generator": {
+    "vA": "new_skill"
+  },
+  "ob-v08-no-image": {
+    "vA": "new_skill"
+  },
+  "ob-v09-single": {
+    "vA": "new_skill"
+  }
+}

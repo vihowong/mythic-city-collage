@@ -3,7 +3,9 @@ name: mythic-city-collage
 description: "Create graphic-surreal visual systems from compressed high-chroma color, staged impossible space, controlled detail density, and print/digital material tension. Use for art direction, image prompts, series keyframes, poster critique, and short motion treatments; not for ordinary travel photography, conventional cyberpunk, or requests that merely combine a list of mythic symbols."
 metadata:
   locale: zh-CN
-  version: "1.1.0"
+  version: "1.2.0"
+  cangjie.bundle-id: "bundle.mythic-city-visual-corpus"
+  cangjie.capability-count: 9
 ---
 
 # 神话城市拼贴
@@ -11,6 +13,8 @@ metadata:
 这不是一套元素清单，而是一套视觉语法。画面是否属于这个体系，主要由四件事决定：**色调是否被压缩成少量强色块，空间是否像可进入的舞台，细节是否形成有主次的密度岛，材质是否在统一印刷表面上有意断裂。**
 
 龙、眼睛、门、棋盘、红日或城市都只是可替换的载体。先建立视觉关系，再决定用什么形象承担责任；不要从“把这些东西放在一起”开始。
+
+本版本由 43 张竖幅静态图和 2 段动态研究蒸馏而来。素材作者、发布时间与授权范围仍待核查；规则只描述可观察的视觉关系，不替素材补写作者意图。
 
 ## 三个识别点
 
@@ -49,6 +53,24 @@ metadata:
 6. 需要构图、色调、材质的具体判断时，读取 [style-grammar.md](references/style-grammar.md)。
 7. 需要提示词、系列或视频方案时，读取 [production-recipes.md](references/production-recipes.md)。
 8. 交付前按 [quality-rubric.md](references/quality-rubric.md) 自检，优先修复构图和色调问题。
+
+## 深层能力路由
+
+常规请求可使用本文件的常驻规则直接完成。遇到需要展开判断的任务，先读 [capability-index.md](references/capability-index.md)，再按当前问题只加载一张能力卡；明确跨两个领域时最多加载两张。
+
+| 当前问题 | 能力卡 |
+| --- | --- |
+| 只有抽象主题、氛围词或元素清单 | [visual-proposition.md](references/capabilities/visual-proposition.md) |
+| 不知道封面、全景、祭坛还是特写 | [composition-skeleton.md](references/capabilities/composition-skeleton.md) |
+| 颜色太甜、太脏、太彩虹或缺少事件色 | [tone-hierarchy.md](references/capabilities/tone-hierarchy.md) |
+| 现实与第二世界并存、梦境漂浮、空间不通 | [stage-space.md](references/capabilities/stage-space.md) |
+| 要求丰富但缩略图失焦，或细节全图同密度 | [detail-density.md](references/capabilities/detail-density.md) |
+| 照片、版画、金属、字体和像素像贴纸 | [material-surface.md](references/capabilities/material-surface.md) |
+| 需要可直接使用的图像提示词 | [prompt-compiler.md](references/capabilities/prompt-compiler.md) |
+| 现有成图像素材堆叠，需要诊断修复 | [diagnose-repair.md](references/capabilities/diagnose-repair.md) |
+| 三连作、系列封面或关键帧统一 | [series-continuity.md](references/capabilities/series-continuity.md) |
+
+需要规则速查时读取 [cheatsheet.md](references/cheatsheet.md)，需要完整术语时读取 [glossary.md](references/glossary.md)，需要理解蒸馏依据与局限时读取 [overview.md](references/overview.md) 和 [digest.md](references/digest.md)。
 
 ## 反拼贴约束
 

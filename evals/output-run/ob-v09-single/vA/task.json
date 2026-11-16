@@ -1,0 +1,7 @@
+{
+  "case_id": "ob-v09-single",
+  "variant_label": "vA",
+  "prompt": "这次只有一张主海报，请给我完整系列连续规则。",
+  "input_files": [],
+  "instruction": "按 prompt 实际完成任务，最终答案写同目录 output.md，其他交付物也放在本目录。不要读取相邻变体、映射表或预期答案。"
+}

@@ -1,0 +1,7 @@
+{
+  "case_id": "oc-v09-series",
+  "variant_label": "vA",
+  "prompt": "做三张同系列封面，从单一人物推进到完整宇宙，请给连续规则。",
+  "input_files": [],
+  "instruction": "按 prompt 实际完成任务，最终答案写同目录 output.md，其他交付物也放在本目录。不要读取相邻变体、映射表或预期答案。"
+}

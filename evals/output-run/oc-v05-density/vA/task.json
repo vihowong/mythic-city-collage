@@ -1,0 +1,7 @@
+{
+  "case_id": "oc-v05-density",
+  "variant_label": "vA",
+  "prompt": "一个极繁世界观海报要丰富但缩略图可读，请给细节岛分配。",
+  "input_files": [],
+  "instruction": "按 prompt 实际完成任务，最终答案写同目录 output.md，其他交付物也放在本目录。不要读取相邻变体、映射表或预期答案。"
+}

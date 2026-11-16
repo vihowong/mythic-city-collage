@@ -1,0 +1,7 @@
+{
+  "case_id": "oc-v01-visual-proposition",
+  "variant_label": "vA",
+  "prompt": "把‘算法接管日常’提炼成不依赖电脑、电路板和眼睛的视觉命题，并说明元素职责。",
+  "input_files": [],
+  "instruction": "按 prompt 实际完成任务，最终答案写同目录 output.md，其他交付物也放在本目录。不要读取相邻变体、映射表或预期答案。"
+}

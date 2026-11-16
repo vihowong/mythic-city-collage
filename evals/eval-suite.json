@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "suite_id": "mythic-city-visual-corpus-v1",
+  "target": "mythic-city-collage",
+  "split_seed": 42,
+  "train_ratio": 0.6,
+  "trigger_cases": [
+    {
+      "case_id": "should-trigger-01",
+      "prompt": "帮我做一张暗色高饱和、超现实但没有元素堆叠的音乐封面方案",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "should-trigger-02",
+      "prompt": "这张海报颜色很多但显得像贴纸，帮我诊断并给最小修复",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "should-trigger-03",
+      "prompt": "给我三张系列封面，统一下视觉风格，但每张空间尺度逐步展开",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "should-trigger-04",
+      "prompt": "Write a production-ready image prompt for a graphic-surreal editorial poster with compressed cobalt and vermilion color, not neon cyberpunk.",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "should-trigger-05",
+      "prompt": "用神话城市拼贴风格做一张海报，但不要龙、眼睛和棋盘",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "should-not-trigger-01",
+      "prompt": "帮我把这张证件照的白底换成蓝底",
+      "expected": "should_not_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "should-not-trigger-02",
+      "prompt": "把这份季度销售数据做成折线图并解释趋势",
+      "expected": "should_not_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "should-not-trigger-03",
+      "prompt": "给这个陶瓷杯做一张干净、无纹理的商业产品棚拍",
+      "expected": "should_not_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "edge-01",
+      "prompt": "我要一张有这种气质的方形品牌 banner，但必须留出文字空间",
+      "expected": "edge_case",
+      "runs": 1
+    },
+    {
+      "case_id": "edge-02",
+      "prompt": "只给我一句最关键的风格建议，不要完整方案",
+      "expected": "edge_case",
+      "runs": 1
+    }
+  ],
+  "output_cases": [
+    {
+      "case_id": "oc-v01-visual-proposition",
+      "prompt": "把‘算法接管日常’提炼成不依赖电脑、电路板和眼睛的视觉命题，并说明元素职责。",
+      "assertions": [
+        { "kind": "contains", "value": "视觉命题" },
+        { "kind": "contains", "value": "视觉职责" },
+        { "kind": "contains", "value": "去名词" }
+      ]
+    },
+    {
+      "case_id": "oc-v02-composition",
+      "prompt": "给我一个 3:4 竖版‘从现实入口进入第二世界’的构图骨架和主轮廓。",
+      "assertions": [
+        { "kind": "contains", "value": "轴线登临" },
+        { "kind": "contains", "value": "主轮廓" },
+        { "kind": "contains", "value": "200px" }
+      ]
+    },
+    {
+      "case_id": "oc-v03-tone",
+      "prompt": "为一张有仪式感但不过度霓虹的海报设计四级色调和灰度检查。",
+      "assertions": [
+        { "kind": "contains", "value": "承重色" },
+        { "kind": "contains", "value": "事件色" },
+        { "kind": "contains", "value": "停顿色" },
+        { "kind": "contains", "value": "灰度" }
+      ]
+    },
+    {
+      "case_id": "oc-v04-space",
+      "prompt": "设计一个现实房间中存在第二层宇宙画面的舞台空间，要说明入口和锚点。",
+      "assertions": [
+        { "kind": "contains", "value": "观看入口" },
+        { "kind": "contains", "value": "透视矛盾" },
+        { "kind": "contains", "value": "观看锚点" }
+      ]
+    },
+    {
+      "case_id": "oc-v05-density",
+      "prompt": "一个极繁世界观海报要丰富但缩略图可读，请给细节岛分配。",
+      "assertions": [
+        { "kind": "contains", "value": "细节岛" },
+        { "kind": "contains", "value": "低密承重" },
+        { "kind": "contains", "value": "缩略图" }
+      ]
+    },
+    {
+      "case_id": "oc-v06-material",
+      "prompt": "把版画人物、照片云、镜面金属和一小块数字界面统一到一张海报。",
+      "assertions": [
+        { "kind": "contains", "value": "基础印刷表面" },
+        { "kind": "contains", "value": "主导材质断点" },
+        { "kind": "contains", "value": "全局颗粒" }
+      ]
+    },
+    {
+      "case_id": "oc-v07-prompt",
+      "prompt": "写一个可执行的英文图像提示词，主题是‘平静外表下的失控’，但不要固定神话符号。",
+      "assertions": [
+        { "kind": "contains", "value": "视觉命题" },
+        { "kind": "contains", "value": "构图骨架" },
+        { "kind": "contains", "value": "细节岛" },
+        { "kind": "contains", "value": "材质断点" },
+        { "kind": "contains", "value": "negative" }
+      ]
+    },
+    {
+      "case_id": "oc-v08-repair",
+      "prompt": "一张海报很亮、很多物件，缩略图不知道看哪里，请按上游优先顺序诊断。",
+      "assertions": [
+        { "kind": "contains", "value": "主轮廓" },
+        { "kind": "contains", "value": "多焦点" },
+        { "kind": "contains", "value": "不要增加纹理" }
+      ]
+    },
+    {
+      "case_id": "oc-v09-series",
+      "prompt": "做三张同系列封面，从单一人物推进到完整宇宙，请给连续规则。",
+      "assertions": [
+        { "kind": "contains", "value": "固定项" },
+        { "kind": "contains", "value": "可变项" },
+        { "kind": "contains", "value": "每张只推进" },
+        { "kind": "contains", "value": "视觉表面" }
+      ]
+    },
+    {
+      "case_id": "ob-v01-symbol-list",
+      "prompt": "我只有这些元素：龙、眼睛、棋盘、城市。直接全部融合。",
+      "assertions": [
+        { "kind": "contains", "value": "视觉职责" },
+        { "kind": "contains", "value": "删除" }
+      ]
+    },
+    {
+      "case_id": "ob-v02-horizontal",
+      "prompt": "把标准竖幅神话海报直接拉成 16:9，不改构图可以吗？",
+      "assertions": [
+        { "kind": "contains", "value": "横版" },
+        { "kind": "contains", "value": "重新设计" },
+        { "kind": "contains", "value": "不能" }
+      ]
+    },
+    {
+      "case_id": "ob-v03-safety-color",
+      "prompt": "为了更酷，把消防出口的绿标改成紫红色。",
+      "assertions": [
+        { "kind": "contains", "value": "标准色" },
+        { "kind": "contains", "value": "不替换" }
+      ]
+    },
+    {
+      "case_id": "ob-v04-real-space",
+      "prompt": "这是给施工方看的严格室内轴测图，加入不可能透视。",
+      "assertions": [
+        { "kind": "contains", "value": "写实" },
+        { "kind": "contains", "value": "不强加" }
+      ]
+    },
+    {
+      "case_id": "ob-v05-minimal-logo",
+      "prompt": "为 16px 应用图标安排四个高密细节岛。",
+      "assertions": [
+        { "kind": "contains", "value": "不需要" },
+        { "kind": "contains", "value": "细节岛" }
+      ]
+    },
+    {
+      "case_id": "ob-v06-clean-ui",
+      "prompt": "给企业财务软件界面加纸噪和黑色套版线，便于和品牌统一。",
+      "assertions": [
+        { "kind": "contains", "value": "不适用" },
+        { "kind": "contains", "value": "印刷表面" }
+      ]
+    },
+    {
+      "case_id": "ob-v07-no-generator",
+      "prompt": "直接生成图片，但当前没有图片生成器。",
+      "assertions": [
+        { "kind": "contains", "value": "没有实际生成" },
+        { "kind": "contains", "value": "提示词" }
+      ]
+    },
+    {
+      "case_id": "ob-v08-no-image",
+      "prompt": "我不知道图哪里不对，你直接猜一下所有问题。",
+      "assertions": [
+        { "kind": "contains", "value": "无法判断" },
+        { "kind": "contains", "value": "上传" }
+      ]
+    },
+    {
+      "case_id": "ob-v09-single",
+      "prompt": "这次只有一张主海报，请给我完整系列连续规则。",
+      "assertions": [
+        { "kind": "contains", "value": "单张" },
+        { "kind": "contains", "value": "不需要" }
+      ]
+    }
+  ]
+}

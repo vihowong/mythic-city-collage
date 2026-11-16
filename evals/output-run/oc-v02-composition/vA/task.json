@@ -1,0 +1,7 @@
+{
+  "case_id": "oc-v02-composition",
+  "variant_label": "vA",
+  "prompt": "给我一个 3:4 竖版‘从现实入口进入第二世界’的构图骨架和主轮廓。",
+  "input_files": [],
+  "instruction": "按 prompt 实际完成任务，最终答案写同目录 output.md，其他交付物也放在本目录。不要读取相邻变体、映射表或预期答案。"
+}
