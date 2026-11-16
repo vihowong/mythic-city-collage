@@ -1,5 +1,5 @@
 interface:
   display_name: "神话城市拼贴"
-  short_description: "用压缩色调、舞台空间与印刷材质构建图形超现实视觉"
+  short_description: "以色彩结构与印刷质感构建和验收图形超现实视觉"
   brand_color: "#0B4EA2"
-  default_prompt: "用 $mythic-city-collage 为一个音乐封面设计视觉命题、构图骨架、色调层级和可执行提示词。"
+  default_prompt: "用 $mythic-city-collage 设计一套以色彩结构和印刷质感为核心的视觉，并生成成图进行验收。"
