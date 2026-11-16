@@ -54,6 +54,12 @@
 |---|---|---|
 | new_skill | 4/4 | ✓contains:固定项; ✓contains:可变项; ✓contains:每张只推进; ✓contains:视觉表面 |
 
+## oc-v10-color-texture
+
+| 变体 | 断言通过 | 明细 |
+|---|---|---|
+| new_skill | 4/4 | ✓contains:色彩面积; ✓contains:邻接; ✓contains:微颗粒; ✓contains:场景 |
+
 ## ob-v01-symbol-list
 
 | 变体 | 断言通过 | 明细 |
@@ -110,7 +116,7 @@
 
 ## 汇总（全部断言通过的 case 比例）
 
-- new_skill: 18/18；完成 18/18（缺失计入分母）
+- new_skill: 19/19；完成 19/19（缺失计入分母）
 
 状态：COMPLETE
 

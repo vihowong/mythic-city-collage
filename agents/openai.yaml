@@ -1,5 +1,5 @@
 interface:
   display_name: "神话城市拼贴"
-  short_description: "以色彩结构与印刷质感构建和验收图形超现实视觉"
+  short_description: "以色彩结构、构图和微颗粒质感构建并验收图像"
   brand_color: "#0B4EA2"
-  default_prompt: "用 $mythic-city-collage 设计一套以色彩结构和印刷质感为核心的视觉，并生成成图进行验收。"
+  default_prompt: "用 $mythic-city-collage 先定义色彩面积与邻接，再生成一张有正交构图和多尺度微颗粒的成图进行验收。"

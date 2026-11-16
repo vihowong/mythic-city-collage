@@ -1,114 +1,123 @@
 ---
 name: mythic-city-collage
-description: "Create and visually validate graphic-surreal image systems from compressed high-chroma color, staged impossible space, controlled detail density, and print/digital material tension. Use for art direction, image prompts, generated-image acceptance, series keyframes, poster critique, and short motion treatments; not for ordinary travel photography, conventional cyberpunk, or requests that merely combine a list of mythic symbols."
+description: "Create and visually validate graphic-surreal image systems whose primary criteria are color-area structure, adjacency and temperature relationships, low-highlight value hierarchy, orthographic or panoramic composition, and multi-scale printed/digital microtexture. Use for art direction, image prompts, generated-image acceptance, poster critique, and series continuity; not for ordinary travel photography, conventional cyberpunk, clean 3D product rendering, or requests that merely combine a list of mythic symbols."
 metadata:
   locale: zh-CN
-  version: "1.3.0"
-  cangjie.bundle-id: "bundle.mythic-city-visual-corpus"
+  version: "1.4.0"
+  cangjie.bundle-id: "bundle.kiuzyx-visual"
   cangjie.capability-count: 9
 ---
 
 # 神话城市拼贴
 
-这不是一套元素清单，而是一套**以色彩结构和图像质感为核心的视觉语法**。具体场景、人物、城市或巨物只负责承载形式关系；验收时首先要看色块面积与邻近关系、冷暖与明暗层级、半调/纸噪/套色错位和材料表面是否成立。
+这是一套以**色彩搭配结构**和**图片质感风格**为核心的视觉语法。人物、房间、城市、道路、神兽和宇宙都只是可变承载物；不能靠场景相似来证明风格成立。
 
-龙、眼睛、门、棋盘、红日或城市都只是可替换的载体。先建立视觉关系，再决定用什么形象承担责任；不要从“把这些东西放在一起”开始。
+本版本结合 `@kiuzyx` 近期 27 张作品与现有 43 张历史语料。近期作品更暗、局部颜色更强、边缘密度更低，但两者共享深色大场、暖中性停顿、朱红事件、清晰硬边和整图微颗粒。
 
-本版本由 43 张竖幅静态图和 2 段动态研究蒸馏而来。实际图片生成请求以生成器输出和成图验收为准；素材作者与授权追溯不属于本技能的操作门槛。
+## 四个主轴
 
-## 三个识别点
+1. **色调结构。** 深蓝、近黑、暗绿承担大面积重量；米白、暖棕和肤色提供过渡与停顿；朱红/橙色只占小面积做事件。重点不是有哪些颜色，而是面积、明度与邻接。
+2. **构图结构。** 先选安静正交场域或极繁全景。安静模式依赖门窗、墙线、桌沿、道路和巨大负形；极繁模式依赖黑空、云海、城市和视觉流。
+3. **图片质量与细节。** 清晰硬边必须与全图微颗粒并存；颗粒至少包含微噪、半调/抖动和较大纸纹/压缩块三个尺度。细节集中在二至四个岛，而不是全图均匀铺满。
+4. **整体视觉风格。** 日常空间被轻微异化，但图像保持冷静、平面、精确和哑光。忽略可识别对象后，色块结构与复制表面仍应成立。
 
-1. **色彩面积结构。** 大面积深钴蓝、墨黑或暗绿承重，朱红、橙红与桃色制造事件，米白负责呼吸。重点不是出现过哪些颜色，而是每种颜色占多大面积、挨着什么、在明度中排第几层。
-2. **图像质感。** 黑色轮廓、平涂色块、粗糙油墨边界、半调颗粒、套色错位、纸纤维和局部金属高光共同构成表面。所有对象都应像印在同一种材料上，而不是来自不同渲染器。
-3. **可替换的空间承载。** 构图只负责组织色块、密度、方向与层级；人物、城市或叙事场景是可变承载物。即使把识别对象全部拿掉，色彩结构与图像质感仍应成立。
+## 先选构图模式
 
-缺少其中两项时，通常只会得到复古插画、赛博海报或元素拼贴，而不是这套视觉。
+构图模式组织的是色块、负形、明度和细节，不规定必须出现什么场景。
 
-## 先选构图骨架
+| 模式 | 画面组织 | 默认细节节奏 |
+| --- | --- | --- |
+| 安静正交场域 | 墙面、门窗、桌沿、车厢、电梯或道路建立横竖舞台 | 大面积低频负形 + 一至三个局部细节岛 |
+| 极繁全景 | 黑空、云海、城市、神山或神话体形成多密度带 | 至少一块大面积安静黑色/蓝色场 |
+| 孤立主体 | 一个大形或一个人物处于宽阔单色场 | 主体局部高密，背景极简 |
+| 轴线登临 | 色温与明度沿一条入口、窗口或道路推进 | 轴线和门槛成岛，两侧低频 |
+| 正面祭坛 | 中央主体、放射线和边框形成近对称秩序 | 中央高密，边缘重复收束 |
+| 超近景切片 | 面部、局部表面或一个事件色占满画面 | 只保留一个材质断点和少量背景 |
+| 框中世界 | 门、窗、屏幕或画框套住第二层表面 | 内外共享色板与颗粒，密度可不同 |
 
-构图骨架约束的是色块与质感的分布，不定义必须出现什么场景。
+一张图只选一个主模式。需要复杂感时，增加同一模式内的层级，不并列多个骨架。
 
-| 骨架 | 画面组织 | 细节分布 | 适用交付 |
-| --- | --- | --- | --- |
-| 孤立图腾 | 一个巨大主体悬在宽阔单色场中，余白达到 40–70% | 主体细节集中，背景极简 | 封面、肖像、单张冲击图 |
-| 轴线登临 | 人物或入口在底部，道路、台阶、画面框或视线推向中心巨物 | 上下分区，中轴连续 | 海报、系列主视觉、纵深叙事 |
-| 全景游行 | 地面、神话层、宇宙层横向堆叠，人物只是众多事件之一 | 三至五条密度带，局部故事多 | 世界观、长海报、视频全景 |
-| 正面祭坛 | 严格或近对称的径向线、边框、主面孔、人物或符号居中 | 中央高密，外围秩序化 | 封面、音乐视觉、仪式感画面 |
-| 框中世界 | 门、窗、镜框、屏幕或舞台口套住第二层空间 | 内外两级密度，边缘可做装饰带 | 门户、时间切换、嵌套叙事 |
+## 色彩决策
 
-不要同时使用三种骨架。需要复杂感时，增加同一骨架内的层级，而不是增加新的构图中心。
+1. **先写色彩—质感命题。** 例如“冷黑大场被一条朱红裂缝打断”或“暖米白纸张中有一块极小金属反光”，而不是先罗列场景。
+2. **分配面积。** 深色承重通常最大，暖中性提供停顿，朱红/橙红只做少量事件。近期样本约为近黑 22%、暗绿 12%、深钴蓝 10%、暖棕/米白 35%、朱红 7%。
+3. **规定邻接。** 至少写出三组：哪两种颜色直接相接、在哪个几何边界、承担什么结构。米白咬入蓝、朱红切黑、暖中性或窄绿色桥接冷暖，是常用关系。
+4. **压低高光。** 近期样本高光约 1.2%，深阴影约 56%。黑色与深蓝必须保留细颗粒、冷色差或局部轮廓，不能压成没有层次的死黑。
 
-## 四个决策
+## 图像质量
 
-1. **先写色彩—质感命题。** 用一句话说明颜色和表面如何产生张力，例如“冷黑秩序被一条暖色裂缝打断”。视觉命题应能脱离场景和具体符号成立。
-2. **确定色调结构。** 先决定谁承担 35–55% 的基础面积，谁只占 8–20% 的事件面积，哪里保留米白色停顿，以及主要颜色之间的邻近关系。参考图不是等比例彩虹。
-3. **画出细节岛。** 全图保留二至四个高细节区域，例如云团、人脸、建筑群或文字边带；其余区域用平涂、轮廓或低密纹理承重。高细节应围绕视觉事件，而不是均匀撒满。
-4. **安排一次材质断裂。** 选择一个位置让镜面金属、摄影、低清像素或字体侵入基础印刷表面。断裂必须服务色彩结构，并通过同一色板、黑轮廓和全局颗粒重新统一。
+- **边缘：** 建筑、人物和色块保持清楚、硬直、可远读。
+- **填充：** 大面积平涂或有限色阶，不使用光滑连续渐变。
+- **微颗粒：** 细噪、抖动、网点或纸纤维覆盖整图。
+- **纹理尺度：** 至少三种尺度，例如细纸噪、中尺度半调/抖动、较大压缩块或刷痕。
+- **材料断点：** 只保留一个小面积主导事件，例如金属、照片、像素或字体，并被同一色板和颗粒缝合。
+- **整体光照：** 哑光、低反光、低泛光；光只用来区分结构，不把画面变成三维场景。
 
 ## 工作流
 
-1. 从需求中提炼：**色彩—质感命题、主要色块的面积与邻近关系、构图骨架、画幅、交付媒介**。不要先收集象征物。
-2. 选定一种构图骨架，并确定缩略图状态下唯一可辨认的主体轮廓。
-3. 指定色调结构：承重色、过渡色、事件色、停顿色；写清面积、明度与相邻颜色。再用墨黑统一轮廓和阴影。
-4. 把细节组织成岛状区域，并决定哪一处材质发生断裂。
-5. 选择一个具体形象执行视觉命题。形象可以来自城市、人物、动物、建筑、图案或抽象体，不要求出现“日常街头”。
-6. 需要构图、色调、材质的具体判断时，读取 [style-grammar.md](references/style-grammar.md)。
-7. 需要提示词、系列或视频方案时，读取 [production-recipes.md](references/production-recipes.md)。
-8. 交付前按 [quality-rubric.md](references/quality-rubric.md) 自检，优先修复构图和色调问题。
-9. 用户要求生成图片时，调用可用图像生成器，保存最终提示词和选定成图，优先验收色彩面积/邻近结构、明度层级和图像质感。场景识别只用于检查承载关系，不作为风格通过依据。
-10. 做一次“去场景测试”：忽略人物、城市、建筑和故事后，画面仍应保留下可辨认的色块结构、冷暖冲突和统一表面。没有生成图时，不得宣称视觉验收通过。
+1. 提炼**色彩—质感命题、主要邻接、构图模式、画幅和输出媒介**。
+2. 选择安静正交场域或极繁全景，并固定一个 200px 可读的主形、轴线或负形结构。
+3. 指定色彩面积、明度职责与至少三组邻接关系。
+4. 预留 30–60% 低频负形；把细节集中到二至四个岛。
+5. 建立统一硬边、平涂、微颗粒和半调/抖动表面，再安排一个小面积材质断点。
+6. 最后选择人物、房间、道路、城市或神话体作为可替换承载。
+7. 需要深入构图、色调或材质时，读取 [style-grammar.md](references/style-grammar.md)。
+8. 需要提示词或系列方案时，读取 [production-recipes.md](references/production-recipes.md)。
+9. 交付前按 [quality-rubric.md](references/quality-rubric.md) 检查色彩结构、构图、图像质量和场景独立性。
+10. 用户要求图片时，调用可用图像生成器，保存最终提示词和真实成图，再执行 200px、灰度、去场景和图像质量评分；不能只验提示词。
 
 ## 深层能力路由
 
-常规请求可使用本文件的常驻规则直接完成。遇到需要展开判断的任务，先读 [capability-index.md](references/capability-index.md)，再按当前问题只加载一张能力卡；明确跨两个领域时最多加载两张。
+先读 [capability-index.md](references/capability-index.md)；按当前问题加载一张能力卡，跨两个领域时最多两张。
 
 | 当前问题 | 能力卡 |
 | --- | --- |
-| 只有抽象主题、氛围词或元素清单 | [visual-proposition.md](references/capabilities/visual-proposition.md) |
-| 不知道封面、全景、祭坛还是特写 | [composition-skeleton.md](references/capabilities/composition-skeleton.md) |
-| 颜色太甜、太脏、太彩虹或缺少事件色 | [tone-hierarchy.md](references/capabilities/tone-hierarchy.md) |
-| 现实与第二世界并存、梦境漂浮、空间不通 | [stage-space.md](references/capabilities/stage-space.md) |
-| 要求丰富但缩略图失焦，或细节全图同密度 | [detail-density.md](references/capabilities/detail-density.md) |
-| 照片、版画、金属、字体和像素像贴纸 | [material-surface.md](references/capabilities/material-surface.md) |
-| 需要可直接使用的图像提示词 | [prompt-compiler.md](references/capabilities/prompt-compiler.md) |
-| 现有成图像素材堆叠，需要诊断修复 | [diagnose-repair.md](references/capabilities/diagnose-repair.md) |
-| 三连作、系列封面或关键帧统一 | [series-continuity.md](references/capabilities/series-continuity.md) |
+| 主题、场景或元素无法形成风格命题 | [visual-proposition.md](references/capabilities/visual-proposition.md) |
+| 不知道该做安静场域还是极繁全景 | [composition-skeleton.md](references/capabilities/composition-skeleton.md) |
+| 色块面积、邻接、冷暖或暗部不稳 | [tone-hierarchy.md](references/capabilities/tone-hierarchy.md) |
+| 需要门窗、框线、室内外层次和负形 | [stage-space.md](references/capabilities/stage-space.md) |
+| 细节太满、负形不足或缩略图失焦 | [detail-density.md](references/capabilities/detail-density.md) |
+| 图片太光滑、颗粒单一或像廉价复古滤镜 | [material-surface.md](references/capabilities/material-surface.md) |
+| 需要可执行提示词 | [prompt-compiler.md](references/capabilities/prompt-compiler.md) |
+| 成图颜色像但整体质感不对 | [diagnose-repair.md](references/capabilities/diagnose-repair.md) |
+| 系列统一与新旧模式切换 | [series-continuity.md](references/capabilities/series-continuity.md) |
 
-需要规则速查时读取 [cheatsheet.md](references/cheatsheet.md)，需要完整术语时读取 [glossary.md](references/glossary.md)，需要理解蒸馏依据与局限时读取 [overview.md](references/overview.md) 和 [digest.md](references/digest.md)。成图验收的方法与样例读取 [visual-acceptance.md](references/visual-acceptance.md)。
+规则速查见 [cheatsheet.md](references/cheatsheet.md)，术语见 [glossary.md](references/glossary.md)，来源与判断依据见 [overview.md](references/overview.md)，完整方法说明见 [digest.md](references/digest.md)。实际成图与验收记录见 [visual-acceptance.md](references/visual-acceptance.md)。
 
-## 反拼贴约束
+## 反拼贴与反场景化
 
-- **缩略图测试：** 缩小到 200px 时，仍能看见一个主轮廓、一条轴线或一个明确入口。
-- **去名词测试：** 去掉龙、眼睛、门等名词后，视觉命题仍然成立；否则只是在组合词典。
-- **颗粒统一测试：** 全图共享同一套纸噪、半调或印刷错位，不能让每种素材拥有独立渲染质感。
-- **重复规则测试：** 同一视觉规则至少出现三次，例如相同黑轮廓、相同橙蓝节奏或相同硬边云团，使异质素材像同一世界的产物。
-- **细节预算测试：** 关闭最密区域后，画面仍应有清楚的色块构图；细节不能承担全部可读性。
+- **缩略图测试：** 200px 下仍能看见主形、结构轴或明确负形。
+- **去场景测试：** 忽略人物、房间、道路、城市和故事名称后，色彩面积、邻接与表面仍成立。
+- **灰度测试：** 仍有深色承重、暖中性停顿和少量事件亮部。
+- **纹理测试：** 全图有连续微颗粒，同时至少存在三种纹理尺度。
+- **细节预算测试：** 关闭最密区域后，色块和构图仍完整。
 
 ## 输出契约
 
-按用户需要的媒介交付，默认包含：
+按用户要求的媒介交付，默认包含：
 
-- **视觉命题：** 一个不依赖符号清单的情绪或思想冲突。
-- **构图说明：** 骨架、主轮廓、观看入口、空间层级。
-- **色调说明：** 承重色、事件色、停顿色与明暗结构。
-- **细节与材质：** 高细节岛、基础表面、唯一材质断裂。
-- **可执行提示词：** 包含构图、色调、线条、细节密度和负面约束。
-- **视觉验收：** 生成请求必须包含实际成图、最终提示词、评分与必要修订记录。
-- **动态方案：** 只在视频请求中加入镜头、异象显形、声音和节奏。
-
-若用户只要成品图或提示词，直接执行，不先要求填写问卷。保持用户现有语言；英文提示词可以保留，但用用户语言解释视觉判断。
+- **色彩结构：** 色角色、面积、明度、三组主要邻接。
+- **构图模式：** 安静/极繁选择、主形、负形、观看路径。
+- **图像质量：** 硬边、平涂、多尺度微颗粒、材质断点和暗部层次。
+- **细节岛：** 二至四个高密区域及其职责。
+- **可执行提示词：** 色彩与表面在前，场景在后，并附针对性负面约束。
+- **视觉验收：** 实际成图、最终提示词、四项主轴评分和必要修订记录。
 
 ## 质量闸门
 
-交付前确认：
+- 色彩存在承重、过渡、事件与停顿职责，不是平均彩色。
+- 至少有三组明确的颜色邻接。
+- 构图属于清楚的安静场域或极繁全景，不混成两个中心。
+- 大面积负形与局部细节岛形成节奏。
+- 清晰硬边与全图多尺度微颗粒同时存在。
+- 暗部有层次，高光面积小且无泛光。
+- 忽略场景和人物后，色彩结构与图片质感仍成立。
+- 生成请求已经检查真实成图，而不是只检查提示词。
 
-- 色块面积有承重、过渡、事件和停顿四级职责，不是平均彩色。
-- 主要颜色之间的邻近关系有意图，冷暖与明暗不是随机分布。
-- 图像表面有明确的印刷/半调/套色/纸噪或等价质感，而不是无触感的干净渲染。
-- 不同媒介共享同一黑轮廓、色板和表面颗粒。
-- 高细节集中在明确区域，背景有足够的平涂或低密区域承重。
-- 忽略所有可识别场景后，色彩结构与图像质感仍有独立辨识度。
-- 缩略图仍能读出一个主形或方向轴；它是承载结构，不是场景要求。
-- 图片生成请求已经检查真实成图，而不是只检查提示词。
+## 已知边界
 
-若作品主要靠堆叠龙、眼睛、霓虹、棋盘和文字来证明风格，回到“四个决策”第 1 步重做。
+- 本轮近期样本来自 X 公开图，平台 `large` 尺寸可能经过压缩；不能把平台纹理全部归因于作者原始输出。
+- 作者与授权检查不属于本技能的验收门槛。
+- 横版、方形和真实无损原图的适配仍需额外测试。
+
+若作品主要靠特定房间、城市、龙、眼睛、霓虹或文字证明风格，回到“四个主轴”重新建立色彩、构图与图像质量。

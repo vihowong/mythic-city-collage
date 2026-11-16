@@ -1,10 +1,13 @@
-# 主验收样片提示词
+# 最终图片生成提示词
 
-- 生成方式：ChatGPT 图像生成
-- 生成日期：2026-11-16
-- 尺寸：1024 × 1536（2:3 竖幅）
-- 目的：只检验色彩搭配结构与图像质感，不依赖人物、城市、建筑或叙事场景
+## 初稿
 
 ```text
-Create a second independent 2:3 vertical visual-acceptance artwork whose subject is color structure and surface texture, not scene content. Do not depict people, crowds, cities, buildings, landscapes, creatures, eyes, portals, or any recognizable narrative object. Use only interlocking abstract color masses and print processes. Color structure: near-black ink as the 38% load-bearing mass; deep cobalt blue as the 25% secondary field; warm ivory as an 18% breathing field; burnt vermilion as the 12% event color; a narrow moss-green bridge at 7%. Do not distribute colors evenly. Build meaningful adjacency: ivory bites into cobalt; a vermilion slit cuts across black without becoming neon; moss green connects ivory and black in one place. Maintain a clear diagonal-to-vertical mass axis, one dominant quiet area, and two compact areas of higher texture. Image quality and texture style: vintage silkscreen and woodblock ink, bold black keylines, hard-edged flat fills, slightly rough ink boundaries, varied halftone dot scales, screen-print misregistration, dry-brush flecks, visible paper fibers, subtle xerox grain, and uneven ink density across the entire surface. Add one small restrained chrome or metallic-foil interruption, fully integrated by the same black contour and palette. The result must still read as this visual system when all recognizable objects are mentally removed. No text, no logos, no watermark, no smooth 3D, no glossy plastic, no neon bloom, no rainbow palette, no uniform texture, no random sticker collage.
+Create one original vertical 2:3 graphic-surreal editorial artwork. The primary subject is color structure and image texture, not a particular scene. Use a quiet orthogonal stage only as a vehicle: broad wall planes, one vertical doorway or window frame, one low horizon, a small partly silhouetted human figure occupying under one-eighth of the frame, and roughly forty-five percent low-information negative space. Color structure: near-black 22 percent as deep anchor, deep cobalt blue 28 percent as cold load-bearing field, warm beige 25 percent as breathing field, burnt vermilion 9 percent as the only event color, dark moss green 10 percent as a bridge, neutral gray 6 percent. Make the adjacency intentional: warm beige bites into cobalt at a hard edge; the vermilion strip cuts only through black; moss green connects the beige and black masses. Keep near-white highlights under 2 percent and avoid bloom. Image quality: extremely consistent fine matte grain over the whole picture, crisp hard architectural edges, subtle pixelized color steps, uneven xerox-like texture in black areas, a light halftone/dither layer in blue and gray, and one tiny restrained chromium interruption under 2 percent of the image. The room may feel slightly impossible but must remain visually quiet and readable. No glossy 3D, no plastic skin, no neon glow, no rainbow grading, no metallic everywhere, no crowded worldbuilding, no text, no logo, no watermark.
+```
+
+## 最终色彩修订
+
+```text
+Keep the exact composition, figure, hard edges, grain, halftone, pixelized color steps and restrained material highlight. Change only the color balance: reduce the near-black floor and wall coverage to about 35 percent; increase deep cobalt blue to about 30 percent and warm beige to about 22 percent; preserve a single burnt vermilion 8 percent event strip and a moss-green 8 percent bridge. Lift the beige and blue midtones modestly so their hue is clearly readable while keeping overall low luminance, no bloom and no large white highlights. Do not add objects, text, glow or smooth 3D.
 ```

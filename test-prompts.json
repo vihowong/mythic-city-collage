@@ -1,7 +1,7 @@
 {
   "skill": "mythic-city-collage",
-  "version": "1.3.0",
-  "source_book": "Mythic City Collage visual corpus — provenance pending",
+  "version": "1.4.0-dev",
+  "source_book": "kiuzyx visual corpus — current X selection plus historical baseline",
   "darwin_compatible": true,
   "test_cases": [
     {
@@ -38,6 +38,13 @@
       "prompt": "用神话城市拼贴风格做一张海报，但不要龙、眼睛和棋盘",
       "expected_behavior": "激活主技能，用视觉职责和形式关系替代固定符号",
       "notes": "显式调用与去符号要求"
+    },
+    {
+      "id": "should-trigger-06",
+      "type": "should_trigger",
+      "prompt": "只检验一套画面的色彩搭配结构和图片质感，不要靠人物或故事成立",
+      "expected_behavior": "激活主技能，优先输出色块面积、邻接、暗部、高光和微颗粒，再选择可替换承载",
+      "notes": "正面场景：本轮新增的色彩—质感主验收"
     },
     {
       "id": "should-not-trigger-01",

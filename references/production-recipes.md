@@ -60,11 +60,35 @@ carry the image; a small area of vermilion, orange-red or luminous metal marks t
 warm ivory and peach provide breathing space. Shapes are separated by bold black keylines
 and hard-edged color blocks. Shadows are posterized. Fine contour engraving, halftone dots,
 screen-print misregistration and paper grain run continuously across the whole surface.
+Use three texture scales: fine paper/toner noise, mid-scale halftone or dither, and larger
+xerox-like breaks or dry-ink grain. Keep the architectural edges crisp while the surface
+remains matte and slightly degraded.
 Sparse photographic, chrome or screen-print fragments are integrated by the same contour,
 palette and grain. Keep near-white highlights scarce. The result should feel like a designed
 print object with an impossible staged space, not a clean 3D render and not a collection
 of unrelated stickers.
 ```
+
+## 当前近期模式：安静正交场域
+
+适用于当前作品中常见的室内、电梯、道路、窗口与日常人物。重点是色块面积、负形、框线和图像质感，不是房间本身。
+
+```text
+Vertical 2:3 graphic-surreal editorial image whose primary subject is color structure and
+surface quality, not narrative. Build a quiet orthographic stage from two or three broad
+wall planes, a doorway or window frame, a low horizon and at least 40 percent low-detail
+negative space. A small stationary witness may occupy less than one-eighth of the frame.
+Use deep cobalt and near-black as load-bearing fields, warm beige as breathing space, dark
+moss green as a bridge, and burnt vermilion as one small event strip. Specify three
+adjacencies: beige against cobalt, vermilion against black, and green between neutral and
+dark masses. Keep overall luminance low and highlights under 2 percent. Apply crisp hard
+edges plus continuous fine toner/paper grain, pixelized color steps, a mid-scale dither or
+halftone, and one or two larger xerox-like irregularities. Add at most one small chrome or
+photo interruption. No glossy 3D, no neon bloom, no rainbow palette, no crowded detail, no
+text, no watermark.
+```
+
+需要极繁全景时，仍先写色块与颗粒，再增加城市、神山或神话体；至少保留一块大面积黑空、云海或暗水面，不能让每个区域拥有同等边缘密度。
 
 ## 配方一：孤立图腾
 

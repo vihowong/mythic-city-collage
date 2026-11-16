@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "suite_id": "mythic-city-visual-corpus-v1",
+  "suite_id": "kiuzyx-current-20261116-v1",
   "target": "mythic-city-collage",
   "split_seed": 42,
   "train_ratio": 0.6,
@@ -32,6 +32,12 @@
     {
       "case_id": "should-trigger-05",
       "prompt": "用神话城市拼贴风格做一张海报，但不要龙、眼睛和棋盘",
+      "expected": "should_trigger",
+      "runs": 1
+    },
+    {
+      "case_id": "should-trigger-06",
+      "prompt": "只检验一套画面的色彩搭配结构和图片质感，不要靠人物或故事成立",
       "expected": "should_trigger",
       "runs": 1
     },
@@ -150,6 +156,16 @@
         { "kind": "contains", "value": "可变项" },
         { "kind": "contains", "value": "每张只推进" },
         { "kind": "contains", "value": "视觉表面" }
+      ]
+    },
+    {
+      "case_id": "oc-v10-color-texture",
+      "prompt": "只做一张色彩结构与图片质量验收图：深蓝、墨黑、暖米白、朱红，正交场域，三组颜色邻接和三种纹理尺度，不要依赖具体人物或故事。",
+      "assertions": [
+        { "kind": "contains", "value": "色彩面积" },
+        { "kind": "contains", "value": "邻接" },
+        { "kind": "contains", "value": "微颗粒" },
+        { "kind": "contains", "value": "场景" }
       ]
     },
     {
